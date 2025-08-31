@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My love Moon</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">HELLO</a>
+        <ul class="underline">
+            <li class="list"><a href="#" class="a_logo1">HOME</a></li>
+            <li class="list"><a href="#" class="a_logo">CONTACT</a></li>
+            <li class="list"><a href="#" class="a_logo">ADVENTURE</a></li>
+            <li class="list"><a href="#" class="a_logo">MOON</a></li>
+        </ul>
+    </header>
+    <section class="sec_main">
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text1">Isn't The Moon Lovely? </h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+
+    <div class="sec" id="sec">
+        <h2 class="sec_h2">It's All About a Moon</h2>
+        <p class="sec_p">The Moon – Our Celestial Neighbor 🌙
+Introduction
+
+The Moon is Earth’s only natural satellite and the fifth largest moon in the Solar System. It has fascinated humanity for centuries, inspiring mythology, science, literature, and exploration. Located about 384,400 kilometers away from Earth, the Moon influences various natural phenomena, such as tides, seasons, and even biological cycles. Studying the Moon gives us deep insights into the early history of the Solar System and the formation of Earth.<BR></BR> Formation of the Moon
+
+The most widely accepted theory about the Moon’s origin is the Giant Impact Hypothesis. According to this, around 4.5 billion years ago, a Mars-sized object called Theia collided with the early Earth. The debris from this massive collision eventually came together to form the Moon. Scientists support this theory because the Moon’s rocks are very similar in composition to Earth’s mantle, suggesting a common origin.<BR></BR> Physical Characteristics
+
+The Moon has a diameter of 3,474 kilometers, making it roughly one-fourth the size of Earth. Its surface is covered with craters, mountains, and plains, created over billions of years due to asteroid impacts and volcanic activity. Unlike Earth, the Moon has no significant atmosphere or liquid water, which makes its environment extremely harsh. Daytime temperatures can rise up to 127°C, while nighttime temperatures can drop as low as −173°C.<BR></BR> Surface of the Moon
+
+The Moon’s surface is a fascinating and rugged landscape, shaped by billions of years of cosmic activity. Unlike Earth, the Moon has no atmosphere to protect it from meteoroids, resulting in numerous impact craters of varying sizes. Some of these craters, like Tycho and Copernicus, are visible even from Earth with the naked eye.
+
+The surface is composed of different terrains, mainly highlands and maria. The highlands are lighter in color and heavily cratered, while the maria are vast, dark plains formed by ancient volcanic eruptions. These lava-filled basins give the Moon its characteristic “spots,” which humans often interpret as shapes like a rabbit or a man’s face.
+
+Another notable feature of the Moon’s surface is the layer of fine, powdery dust called regolith. Regolith is formed due to the continuous bombardment of micrometeoroids and the breakdown of rocks over millions of years. It ranges from a few centimeters to several meters deep in certain regions. The absence of wind and water erosion means that footprints made by astronauts during the Apollo missions in the 20th century remain preserved even today.
+
+The temperature on the Moon’s surface is extreme due to the lack of an atmosphere. During the lunar day, temperatures can soar up to 127°C, while at night, they can plummet to -173°C. These harsh conditions make the Moon a challenging environment for future human colonization.<br/><br/>Phases of the Moon
+
+The phases of the Moon occur due to its revolution around Earth and the changing angles of sunlight hitting its surface. As the Moon completes a full orbit around Earth in about 29.5 days, different portions of its sunlit side become visible to us, creating a repeating cycle of phases.
+
+New Moon – The cycle begins when the Moon is positioned between Earth and the Sun. The side facing Earth is completely dark, making the Moon invisible in the night sky.
+
+Waxing Crescent – A small, curved sliver of the Moon becomes visible as sunlight begins to illuminate its surface.
+
+First Quarter – Half of the Moon’s visible surface is lit up, forming a perfect semicircle in the sky.
+
+Waxing Gibbous – More than half of the Moon appears illuminated as it approaches the full phase.
+
+Full Moon – The entire face of the Moon is visible, reflecting maximum sunlight. This is when the Moon appears brightest.
+
+Waning Gibbous – After the full moon, the illuminated area starts decreasing gradually.
+
+Last Quarter – Once again, only half of the Moon’s visible surface is lit, opposite to the first quarter.
+
+Waning Crescent – A tiny sliver of illumination remains before the cycle returns to the new moon.
+
+These phases are responsible for many cultural beliefs, festivals, and natural occurrences. For example, certain tides, known as spring tides, are stronger during the full moon and new moon phases because of the combined gravitational pull of the Sun and the Moon.<br/><br/>Importance of the Moon
+
+The Moon significantly influences life on Earth in multiple ways. Its gravitational pull creates tides, which play a critical role in shaping coastal ecosystems and marine life. The Moon also stabilizes Earth’s axial tilt, preventing extreme climatic changes and making the planet more habitable.
+
+In addition to its natural impact, the Moon holds cultural and spiritual significance. Many civilizations, from ancient Egypt to India, have associated lunar cycles with calendars, rituals, and myths. Festivals like Eid, Mid-Autumn Festival, and Sharad Purnima are celebrated according to lunar phases.
+</p>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text1 = document.getElementById('text1');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text1.style.marginRight = value * 3.2 + 'px';
+            text1.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.marginTop = value * 0.5 + 'px';
+            
+        })
+    </script>
+</body>
+</html>
